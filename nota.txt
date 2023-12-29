@@ -1,0 +1,23 @@
+Vamos usar o composer para criar o "composer.json",
+que vamos configurar o importe de todas as classes, ao
+inves de chamar uma a uma.
+
+1_ Codigo AutoLoad Inicial
+
+{
+    "name":"code/vagas",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
+
+
+2_ Criando execução do AutoLoad
+
+Depois de criar o arquivo "composer.json"
+vamos no terminal e rodar um comando para que 
+ele inicialize o Composer.
+
+Comando: composer install
